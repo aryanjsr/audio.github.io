@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Single Song Player</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AmplitudeJS Single Song Example</title>
+
+    <!-- Include font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
+
+
+		<!-- Include Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+  </head>
+  <body>
+    <div id="single-song-player">
+      <img data-amplitude-song-info="cover_art_url"/>
+      <div class="bottom-container">
+        <progress class="amplitude-song-played-progress" id="song-played-progress"></progress>
+
+        <div class="time-container">
+          <span class="current-time">
+            <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
+          </span>
+          <span class="duration">
+            <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+          </span>
+        </div>
+
+        <div class="control-container">
+          <div class="amplitude-play-pause" id="play-pause"></div>
+          <div class="meta-container">
+            <span data-amplitude-song-info="name" class="song-name"></span>
+            <span data-amplitude-song-info="artist"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a class="learn-more" href="https://serversideup.net/courses/amplitudejs-from-the-ground-up/">Learn more on Server Side Up</a>
+  </body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/amplitudejs@latest/dist/amplitude.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
